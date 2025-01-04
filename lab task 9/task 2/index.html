@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike-Themed Navigation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4; /* Light grey background for Nike's clean design */
+      color: #333;
+    }
+
+    /* Navigation bar container */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #111; /* Nike's black color theme */
+      padding: 15px 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin: 20px auto;
+      max-width: 1200px;
+    }
+
+    /* Logo styling */
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .navbar .logo span {
+      color: #fff; /* White for Nike branding */
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* Navigation links container */
+    .navbar .nav-links {
+      display: flex;
+      list-style-type: none;
+    }
+
+    /* Individual navigation link styling */
+    .navbar .nav-links li {
+      margin: 0 15px;
+    }
+
+    .navbar .nav-links a {
+      text-decoration: none;
+      color: #fff; /* White links */
+      font-size: 16px;
+      padding: 10px 15px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .navbar .nav-links a:hover {
+      background: #333; /* Dark grey hover */
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    /* Responsive for small screens */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+      }
+
+      .navbar .nav-links li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <!-- White logo image URL -->
+      <img src="nike logo.png" alt="Nike Logo in White">
+      <span>Nike</span>
+    </div>
+
+    <!-- Navigation links -->
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
